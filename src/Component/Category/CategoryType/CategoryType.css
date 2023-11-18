@@ -1,0 +1,49 @@
+.category-type-container{
+    width: 73vw;
+    >.type-name{
+        text-align: center;
+        margin: 50px;
+        text-transform: uppercase;
+        font-size: 30px;
+        color: cornflowerblue;
+    }
+    >.row{
+        >.type-box{
+            height: 40vh;
+            width: 70vw;
+            margin: 50px 0 0 60px;
+            border: 2px solid rgb(124, 99, 99);
+            cursor: pointer;
+            >.row{
+                >.e-img{
+                    >img{
+                        height: 16rem;
+                        margin-left: 30px;
+                        margin-top: 10px;
+                        border-radius: 5px;
+                    }
+                 
+                }
+                >.e-info{
+                    >h3{
+                        padding-right: 20px;
+                        color: black;
+
+                    }
+                }
+            }
+        }
+        >.type-box:hover{
+            box-shadow: 2px 2px 2px 2px rgb(85, 85, 85);
+            >.row{
+              >.e-info{
+                >h3{
+                    color: #031146;
+                    font-weight: 550;
+                }
+              }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,121 @@
+.product-container{
+    width: 100%;
+}
+
+.product-img-row{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    
+}
+.product-img-box{
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgb(158, 156, 156);
+    padding: 10px;
+    border-radius: 8px;
+    >img{
+        max-height: 300px;
+        max-width: 300px;
+        cursor: pointer;
+    }
+   
+}
+.img-slide{
+    display: flex;
+    gap: 5px;
+    padding: 10px 0px;
+    padding-left: 2px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    
+    >img{
+        max-height: 100px;
+        max-width: 100px;
+        cursor: pointer;
+        border: 1px solid rgb(158, 156, 156);
+        border-radius: 8px;
+        margin-right: 5px;
+    }
+}
+.product-buy{
+   padding-top: 20px;
+   padding-left: 50px;
+   font-size: 20px;
+}
+.product-buy-btn{
+    margin: 50px 0px;
+    display: flex;
+    gap: 40px;
+    >button{
+        width: 150px;
+        border-radius: 5px;
+        >i{
+            text-align: center;
+        }
+    }
+    
+}
+.reviews-box{
+    width: 250px;
+    height: 400px;
+    background: rgb(247, 245, 245);
+    border-radius: 8px;
+    overflow: scroll;
+    overflow-x: hidden;
+    >h3{
+        text-align: center;
+        padding-top: 10px;
+        color: rgb(138, 128, 128);
+    }
+    >ul{
+        list-style: square;
+    }
+}
+.review-input{
+    display: flex;
+    padding-top: 220px;
+    padding-left: 10px;
+    gap: 3px;
+    
+    >input{
+        border-radius: 5px;
+    }
+}
+
+.product-detail-box{
+    margin: 30px 60px;
+    width: 90%;
+    height: 30vh;
+    background: rgb(230, 229, 229);
+    padding: 20px;
+    >ul{
+        list-style: square;
+        >li{
+            font-size: 25px;
+        }
+    }
+}
+
+
+.stockCounter input {
+    border: none;
+    width: 3rem;
+    text-align: center;
+  }
+  
+  .plus,
+  .minus {
+    padding: 0.1rem 0.5rem;
+  }
+  
+  .stockCounter input::-webkit-outer-spin-button,
+  .stockCounter input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: white;
+  }

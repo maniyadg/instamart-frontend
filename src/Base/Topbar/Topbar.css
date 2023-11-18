@@ -1,0 +1,302 @@
+.topbar {
+
+    height: 10vh;
+    width: 83%;
+    display: inline-block;
+    margin: 0rem 0rem 1rem auto;
+    background-color: rgb(255, 255, 255);
+
+    >.nav-mobile-items {
+        display: none;
+    }
+
+    >.nav-items {
+        display: flex;
+        width: 100%;
+
+        >ul {
+            display: flex;
+            width: 80%;
+            padding: 20px 0px 0px 0px;
+            font-weight: bold;
+            list-style: none;
+            justify-content: space-evenly;
+
+
+            >li {
+                cursor: pointer;
+
+                >input {
+                    border-radius: .5rem;
+                    border: 3px solid rgb(208, 181, 233);
+                    outline: none;
+                    box-sizing: border-box;
+                    padding-left: 8px;
+                }
+
+                >input:focus {
+                    border: 3px solid rgb(151, 71, 226);
+                }
+
+                >.image {
+                    position: relative;
+                    bottom: .8rem;
+                    border-style: double;
+                }
+
+                >.t-icon {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
+.src-btn {
+    margin-left: 10px;
+    border-radius: 15px;
+    width: 60px;
+}
+
+/* 4K CSS */
+@media (max-width:3000px) and (min-width:1700px) {
+    .topbar {
+
+        >.nav-items {
+            display: flex;
+            width: 100%;
+
+            >ul {
+                display: flex;
+                width: 100%;
+                padding: 18px 0px 0px 0px;
+                font-weight: 600;
+                list-style: none;
+                justify-content: space-around;
+
+
+                >li {
+                    cursor: pointer;
+                    font-size: 28px;
+
+
+                    >.image {
+                        position: relative;
+                        bottom: .8rem;
+                        border-style: double;
+                    }
+
+                    >.t-icon {
+                        font-size: 40px;
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+    .src-input {
+        border-radius: 15px;
+        width: 30rem;
+    }
+
+    .src-btn {
+        border: none;
+        background: none;
+    }
+
+    .src-btn:hover {
+        color: blue;
+    }
+}
+
+@media (max-width:1050px) and (min-width : 600px) {
+    .topbar {
+
+        >.nav-items {
+            display: flex;
+            width: 100%;
+
+            >ul {
+                display: flex;
+                width: 100%;
+                padding: 10px 0px 0px 0px;
+                font-weight: 600;
+                list-style: none;
+                justify-content: space-around;
+
+
+                >li {
+                    cursor: pointer;
+                    font-size: 10px;
+
+
+                    >.image {
+                        position: relative;
+                        bottom: .3rem;
+                        border-style: double;
+                    }
+
+                    >.t-icon {
+                        font-size: 13px;
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+    .src-input {
+        border-radius: 15px;
+        width: 10rem;
+    }
+
+    .src-btn {
+        border: none;
+        background: none;
+    }
+
+    .src-btn:hover {
+        color: blue;
+    }
+}
+
+/* Mobile Css */
+@media (max-width:600px) and (min-width:200px) {
+    .topbar {
+        background-color: #354376;
+        position: relative;
+        height: 5vh;
+        margin-top: 15px;
+
+        >.nav-mobile-items {
+            display: block;
+
+            >ul {
+                display: flex;
+                position: relative;
+                justify-content: space-evenly;
+                list-style: none;
+                flex-flow: row;
+
+                >li {
+                    color: antiquewhite;
+                    cursor: pointer;
+                }
+
+
+
+            }
+
+            .home-logo {
+                position: absolute;
+                left: -50px;
+            }
+        }
+
+        >.nav-items {
+            display: none;
+
+            >ul {
+                >li {
+                    display: none;
+                }
+
+                >li:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .src-input {
+        height: 22px;
+        border-radius: 15px;
+        width: 20rem;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 10px;
+        margin-left: -150px;
+    }
+
+    .src-btn {
+        position: relative;
+        top: -10px;
+        left: 170px;
+        display: flex;
+        border: none;
+        background: none;
+
+        >i {
+            position: relative;
+            top: 5px;
+            left: -40px;
+        }
+
+    }
+
+    .src-btn:hover {
+        color: blue;
+    }
+    .mobile-src {
+        color: #fff;
+        position:relative;
+        top:8px;
+        right: 25px;
+    }
+}
+
+@media (max-width:350px) and (min-width:200px) {
+    .topbar {
+        background-color: #354376;
+        position: relative;
+        height: 5vh;
+        margin-top: 15px;
+
+        >.nav-mobile-items {
+            display: block;
+
+            >ul {
+                display: flex;
+                position: relative;
+                justify-content: space-evenly;
+                list-style: none;
+                flex-flow: row;
+
+                >li {
+                    color: antiquewhite;
+                }
+
+
+
+            }
+
+        }
+    }
+    
+    .mobile-src {
+        color: #fff;
+        position:relative;
+        top:8px;
+        left:0px;
+    }
+}
+
+@media (max-width:368px) {
+    .src-input {
+        width: 15rem;
+        margin-left: -80px;
+    }
+
+}
