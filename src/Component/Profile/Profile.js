@@ -15,7 +15,7 @@ export default function Profile() {
   }, []);
   
  const myposts = async() => {
-  const {data} = await axios.get('http://localhost:4000/api/myposts')
+  const {data} = await axios.get('https://instamart-backend.onrender.com/api/myposts')
   if(data){
     setPosts(data.products.length)
   }
