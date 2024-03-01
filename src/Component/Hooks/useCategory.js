@@ -7,7 +7,7 @@ export default function useCategory() {
   //get cat
   const getCategories = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:4000/api/get-category`);
+      const { data } = await axios.get(`https://instamart-backend.onrender.com/api/get-category`);
       setCategories(data.category);
     } catch (error) {
       console.log(error);
